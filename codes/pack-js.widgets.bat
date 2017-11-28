@@ -1,0 +1,1 @@
+for /f %%i in (js_list_widgets.txt) do java -jar ../pkgs/yuicompressor-2.4.8.jar -v --type js --charset utf-8 flareJ.%%i.js > ../pkgs/widgets/fj.%%i.js

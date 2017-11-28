@@ -1,0 +1,28 @@
+﻿/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2012 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@tom.com
+* last update:2012-8-1
+***********************************************************/
+
+/*----------------------------------------------*
+* fj.tbj.theme.blue
+*----------------------------------------------*/
+.tbj {position:relative;border-color:#57B9DC;}
+.tbj_btnL{margin:3px 0 0 3px;width:8px;height:16px;background-image:url(../../blue/svg/tbj/tbjBtnL.svg);}
+.tbj_btnR{margin:3px 0 0 4px;width:8px;height:16px;background-image:url(../../blue/svg/tbj/tbjBtnR.svg);}
+.tbj_areaTabBtns{height:30px;width:100%;background-color:#85B5D9;background-repeat:repeat-x;overflow:hidden;position:relative;}
+.tbj_atbBorder{height:1px;_font-size:0;background-color:#4297D7;position:absolute;left:0;top:29px;z-index:0;}
+.tbj_atbBorder2{height:1px;width:100%;_font-size:0;background-color:#4297D7;position:absolute;left:0;top:29px;z-index:1;}
+.tbj_tabBtnNormal{color:#2E6E9E;}
+.tbj_tabBtnNormal table{background-color:#EAF4FD;border:1px solid #99bad4;}
+.tbj_tabBtnOver{color:#2E6E9E;}
+.tbj_tabBtnOver table{background-color:#dbe9f5;border:1px solid #66b0e8;}
+.tbj_tabBtnDown{color:#E17009;}
+.tbj_tabBtnDown table{background-color:#fff;border:1px solid #4297D7;}

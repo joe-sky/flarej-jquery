@@ -1,0 +1,78 @@
+/**********************************************************
+ *-----------------------------------*
+ * flareJ
+ *-----------------------------------*
+ * base on jQuery
+ * Copyright 2015 Joe_Sky
+ * Licensed under the MIT license
+ *-----*-----*-----*-----*-----*-----*
+ * author:Joe_Sky
+ * mail:hitomi_doax@sina.com
+ * last update:2015-8-4
+ ***********************************************************/
+
+/*----------------------------------------------*
+ * flareJ.Button
+ *----------------------------------------------*/
+.btnj {
+    display: inline-block;
+    padding: 4px 8px;
+    *padding-top: 3px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #333;
+    line-height: 14px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    *overflow: visible;
+    *filter: chroma(color=#000000);
+}
+
+.btnj:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btnj:hover,
+.btnj:focus {
+    text-decoration: none;
+}
+
+.btnj.btnj-selected {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btnj.btnj-disabled,
+.btnj[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.65;
+}
+
+.btnj-hover {
+    background-color: #9bd1f6 !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .btnj {
+        font-size: 14px;
+    }
+}

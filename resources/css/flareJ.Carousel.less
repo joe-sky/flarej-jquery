@@ -1,0 +1,178 @@
+/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2014 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2014-12-23
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.Carousel
+*----------------------------------------------*/
+.crsj {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.crsj_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.crsj_item {
+    position: relative;
+    display: none;
+    z-index: 17;
+    -webkit-transition: left 0.6s ease-in-out;
+    transition: left 0.6s ease-in-out;
+}
+
+.crsj_item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+}
+
+.crsj_active, .crsj_next, .crsj_prev {
+    display: block;
+}
+
+.crsj_active {
+    left: 0;
+}
+
+.crsj_next, .crsj_prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.crsj_next {
+    left: 100%;
+}
+
+.crsj_prev {
+    left: -100%;
+}
+
+.crsj_active.crsj_left {
+    left: -100%;
+}
+
+.crsj_active.crsj_right {
+    left: 100%;
+}
+
+.crsj_next.crsj_left, .crsj_prev.crsj_right {
+    left: 0;
+}
+/*--nav--*/
+.crsj_nav {
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    opacity: 0.5;
+    background-repeat: repeat-x;
+    z-index: 19;
+}
+
+.crsj_nav.crsj_nav_left {
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+}
+
+.crsj_nav.crsj_nav_right {
+    right: 0;
+    text-align: right;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.crsj_nav:hover, .crsj_nav:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+}
+
+.crsj_nav:hover {
+    cursor: pointer;
+}
+
+.crsj_navIcon {
+    position: absolute;
+    top: 50%;
+    z-index: 16;
+    display: inline-block;
+}
+
+.crsj_navIcon.crsj_navIcon_prev {
+    left: 50%;
+}
+
+.crsj_navIcon.crsj_navIcon_next {
+    right: 50%;
+}
+
+.crsj_navIcon_prev, .crsj_navIcon_next {
+    width: 20px;
+    height: 20px;
+    margin-top: -20px;
+    font-family: @fontFamily;
+    font-size: 20pt;
+    line-height: 20px;
+}
+
+.crsj_navIcon_prev {
+    margin-left: -10px;
+}
+
+.crsj_navIcon_next {
+    margin-right: -10px;
+}
+
+.crsj_navIcon_prev:before {
+    content: "\2039";
+}
+
+.crsj_navIcon_next:after {
+    content: "\203a";
+}
+/*--indicator--*/
+.crsj_indicator {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    height: 10px;
+    bottom: 20px;
+    left: 50%;
+    z-index: 18;
+}
+
+.crsj_indicator li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 1px 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    _font-size: 0;
+}
+
+.crsj_indicator li.crsj_indicator_active {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}

@@ -1,0 +1,25 @@
+﻿/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2014 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2012-6-29
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.Waterfall
+*----------------------------------------------*/
+.wfj { width: 990px; margin: 0 auto; min-height: 500px; }
+.wfj_container { position: relative; }
+.wfj_item { position: absolute; border-radius: 2px;width:225px;background: #fff; margin-bottom: 10px; border: 1px solid #cbcdcc; }
+.wfj_photo { padding: 5px 3px 30px 5px; }
+.wfj_item img { border: 0; }
+.wfj_infor_photo { height: 50px; line-height: 50px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; background: #fafafa; color: #666; padding-left: 10px; }
+.wfj_infor_photo span { color: #ff6102; }
+.wfj_download { background: #f2f2f2; border-top: 1px solid #fff; height: 31px; line-height: 31px; padding-left: 10px; }
+.wfj_download a { font-size: 12px; color: #333; text-decoration: underline; }

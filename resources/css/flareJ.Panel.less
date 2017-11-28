@@ -1,0 +1,292 @@
+/**********************************************************
+*-----------------------------------*
+* flareJ
+*-----------------------------------*
+* base on jQuery
+* Copyright 2015 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2015-5-25
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.Panel
+*----------------------------------------------*/
+/*panel head*/
+.pj_img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    float: left;
+    margin: 4px 3px 0 5px;
+    position: relative;
+    z-index: 1;
+}
+/*close button*/
+.pj_min {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    float: right;
+    position: relative;
+    z-index: 1;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin: 0 2px 0 0;
+    top: 10px;
+    top: 10px@ie8plus;
+    *top: 10px;
+}
+
+.pj_fullScreen {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    float: right;
+    position: relative;
+    z-index: 1;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin: 0 2px 0 0;
+    top: 10px;
+    top: 10px@ie8plus;
+    *top: 10px;
+}
+
+:root .pj_min, .pj_close, .pj_fullScreen {
+    top: 10px\0;
+}
+/*IE9 only*/
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+    .pj_min, .pj_close, .pj_fullScreen {
+        top: 10px;
+    }
+}
+/*opera only*/
+
+.pj_bodyIn {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+/*button*/
+.pj_btnBottom {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin: 0 5px 0 0;
+}
+/*img bg*/
+.pj_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+}
+
+.pj_bg_table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.pj_bg1 {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    background-image: url(../image/Panel/bg/boxy-nw.png);
+    _background-image: url(../image/Panel/bg/boxy-nw.gif);
+    background-repeat: no-repeat;
+}
+
+.pj_bg2 {
+    background-image: url(../image/Panel/bg/boxy-n.png);
+    background-repeat: repeat-x;
+    filter: alpha(opacity=100);
+}
+
+.pj_bg3 {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    background-image: url(../image/Panel/bg/boxy-ne.png);
+    _background-image: url(../image/Panel/bg/boxy-ne.gif);
+    background-repeat: no-repeat;
+}
+
+.pj_bg4 {
+    width: 6px;
+    padding: 0;
+    background-image: url(../image/Panel/bg/boxy-l.png);
+    background-repeat: no-repeat;
+}
+
+.pj_bg5 {
+    background-image: url(../image/Panel/bg/boxy-tc.png);
+    background-color: #ffffff;
+    background-repeat: repeat-x;
+    filter: alpha(opacity=100);
+}
+
+.pj_bg6 {
+    width: 6px;
+    padding: 0;
+    background-image: url(../image/Panel/bg/boxy-r.png);
+    background-repeat: no-repeat;
+}
+
+.pj_bg7 {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    background-image: url(../image/Panel/bg/boxy-sw.png);
+    _background-image: url(../image/Panel/bg/boxy-sw.gif);
+    background-repeat: no-repeat;
+}
+
+.pj_bg8 {
+    background-image: url(../image/Panel/bg/boxy-s.png);
+    background-repeat: repeat-x;
+    filter: alpha(opacity=100);
+}
+
+.pj_bg9 {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    background-image: url(../image/Panel/bg/boxy-se.png);
+    _background-image: url(../image/Panel/bg/boxy-se.gif);
+    background-repeat: no-repeat;
+}
+
+.pj-head-btn {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .fj-border-radius(5px);
+}
+
+.pj-close {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+    top: 5px;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.pj-min, .pj-fullscreen {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 0;
+    top: 8px;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.pj {
+    .btnj {
+        min-width: 60px;
+    }
+}
+
+/*tooltip arrow*/
+.ttj_arrow.fj-mobile {
+    display: none;
+}
+
+.ttj_arrow em, .ttj_arrow i {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-style: normal;
+}
+
+.ttj_arrow_top, .ttj_arrow_bottom {
+    height: 10px;
+    width: 16px;
+    left: 30px;
+}
+
+.ttj_arrow_left, .ttj_arrow_right {
+    height: 16px;
+    width: 10px;
+    top: 15px;
+}
+
+.ttj_arrow_top {
+    top: -9px;
+    top: -8px@ie8plus;
+    *top: -8px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+    .ttj_arrow_top {
+        top: -8px;
+    }
+}
+/*opera*/
+.ttj_arrow_top em {
+    top: 0px;
+}
+
+.ttj_arrow_top i {
+    top: 1px;
+}
+
+.ttj_arrow_bottom {
+    bottom: -8px;
+    bottom: -9px@ie8plus;
+    *bottom: -9px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+    .ttj_arrow_bottom {
+        bottom: -9px;
+    }
+}
+/*opera*/
+.ttj_arrow_bottom em {
+    top: -5px;
+}
+
+.ttj_arrow_bottom i {
+    top: -6px;
+}
+
+.ttj_arrow_left {
+    left: -8px;
+}
+
+.ttj_arrow_left em {
+    left: 0px;
+}
+
+.ttj_arrow_left i {
+    left: 1px;
+}
+
+.ttj_arrow_right {
+    right: -9px;
+}
+
+.ttj_arrow_right em {
+    left: -5px;
+}
+
+.ttj_arrow_right i {
+    left: -6px;
+}

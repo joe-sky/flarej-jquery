@@ -1,0 +1,3 @@
+flareJ.Base.js
+flareJ.Gesture.js
+flareJ.Carousel.js

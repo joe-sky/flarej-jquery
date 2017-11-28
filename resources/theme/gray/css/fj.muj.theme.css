@@ -1,0 +1,23 @@
+﻿/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2012 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@tom.com
+* last update:2012-8-13
+***********************************************************/
+
+/*----------------------------------------------*
+* fj.muj.theme.gray
+*----------------------------------------------*/
+.muj_td1 { border-right: 1px solid #bdbdbd; width: 18px; height: 22px;font-size: 12px;}
+.muj td { line-height:22px;font-family: 宋体;color:#525252; }
+.muj_pjBody {background-color:#f4f4f4;}
+.muj_itemBg1 {background:url(../../gray/image/muj/menuBg_over.gif) no-repeat left center;}
+.muj_itemBg2 {background:url(../../gray/image/muj/menuBg_over.gif) no-repeat right center;}
+.muj_arrowL {background: url(../../gray/image/muj/arrow-l.gif) center center no-repeat;}
+.muj_arrowR {background: url(../../gray/image/muj/arrow-r.gif) center center no-repeat;}

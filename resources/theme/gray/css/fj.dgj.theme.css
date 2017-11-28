@@ -1,0 +1,29 @@
+﻿/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2012 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@tom.com
+* last update:2012-8-3
+***********************************************************/
+
+/*----------------------------------------------*
+* fj.dgj.theme.gray
+*----------------------------------------------*/
+.dgj { background-color:#ffffff;clear: both; float: left; position: relative;_overflow:hidden;}
+.dgj_floatBtn { z-index:200;position: absolute; top: 3px; right: 1px; width: 15px; height: 20px; background: transparent url(../../gray/image/dgj/pick-button.gif) no-repeat left top; border-width: 0px; cursor: pointer; font-size: 0; }
+.dgj th { cursor: pointer; font-size: 13px; color: #666666; text-align: center;background-image:url(../../gray/image/dgj/TableTitleBg.jpg);/*background-image:url(../svg/Datagrid/dgjTh.svg);*/background-repeat:repeat-x;background-position:10px 0;background-color:#E2E2E2;padding: 2px; font-weight: normal; }
+.dgj table, .dgj th, .dgj td { border-color: #aaaaaa; }
+.dgj tfoot tr{background-color:#ededed;}
+.dgj_oddTr{background-color:#ffffff;}
+.dgj_evenTr{background-color:#ededed;}
+.dgj_selectedTr{background-color:#FECCFF;}
+.dgj_oddTrG{background-color:#ffcec1;}
+.dgj_evenTrG{background-color:#ffedc1;}
+.dgj_sortImg { position:absolute;right:0;top:5px;*position:static;font-size:0;width:9px;height:5px;background-repeat:no-repeat;}
+.dgj_sortAsc{background-image:url(../../gray/image/dgj/sort_asc.gif);}
+.dgj_sortDesc{background-image:url(../../gray/image/dgj/sort_desc.gif);}

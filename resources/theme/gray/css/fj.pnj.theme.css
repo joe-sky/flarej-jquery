@@ -1,0 +1,28 @@
+﻿/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2012 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@tom.com
+* last update:2012-8-6
+***********************************************************/
+
+/*----------------------------------------------*
+* fj.pnj.theme.gray
+*----------------------------------------------*/
+.pnj_split { width: 2px; height: 13px; float: left; margin: 1px 3px 0 3px; background: url(../../gray/image/pnj/grid-split.gif) no-repeat; }
+.pnj_btn_first { background: url(../../gray/image/pnj/page-first.gif) no-repeat; }
+.pnj_btn_first_g { background: url(../../gray/image/pnj/page-first-disabled.gif) no-repeat; }
+.pnj_btn_last { background: url(../../gray/image/pnj/page-last.gif) no-repeat; }
+.pnj_btn_last_g { background: url(../../gray/image/pnj/page-last-disabled.gif) no-repeat; }
+.pnj_btn_prev { background: url(../../gray/image/pnj/page-prev.gif) no-repeat; }
+.pnj_btn_prev_g { background: url(../../gray/image/pnj/page-prev-disabled.gif) no-repeat; }
+.pnj_btn_next { background: url(../../gray/image/pnj/page-next.gif) no-repeat; }
+.pnj_btn_next_g { background: url(../../gray/image/pnj/page-next-disabled.gif) no-repeat; }
+.pnj_btn_refresh { background: url(../../gray/image/pnj/refresh.gif) no-repeat; }
+.pnj_btn_refresh_l { background: url(../../../image/LoadMask/loading9.gif) no-repeat; }
+.pnj_btn_go { margin: 1px 0 0 5px; float: left; cursor: pointer; color: #244890;width:37px;height:16px;background: url(../../gray/image/pnj/btngo.gif) no-repeat; }

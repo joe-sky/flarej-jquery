@@ -1,0 +1,20 @@
+﻿/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2012 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@tom.com
+* last update:2012-9-12
+***********************************************************/
+
+/*----------------------------------------------*
+* fj.acj.theme.blue
+*----------------------------------------------*/
+.acj { background-color: #ffffff; }
+.acj_ttj {border-color:#A6C9E2;background-color:#fff;}
+.acj_ul { color:#036ec1;list-style: none; margin: 2px; padding: 0px; text-align: left; }
+.acj_selectedItem { background-color: #0079ce; color: #fff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px; }

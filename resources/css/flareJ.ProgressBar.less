@@ -1,0 +1,56 @@
+/**********************************************************
+*-----------------------------------*
+* flareJ
+*-----------------------------------*
+* base on jQuery
+* Copyright 2015 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2015-2-2
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.ProgressBar
+*----------------------------------------------*/
+.pbj_progressDiv {
+    float: left;
+    width: 100%;
+}
+
+.pbj_percent {
+    font-size: 11pt;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -8px 0 0 -10px;
+}
+
+.pbj_normal progress::-moz-progress-bar {
+    border-radius: 3px 0 0 3px;
+}
+
+.pbj_normal progress::-webkit-progress-value {
+    border-radius: 3px 0 0 3px;
+}
+
+.pbj_normal progress::-webkit-progress-bar-value {
+    border-radius: 3px 0 0 3px;
+}
+
+.pbj_max progress::-moz-progress-bar {
+    border-radius: 3px;
+}
+
+.pbj_max progress::-webkit-progress-value {
+    border-radius: 3px;
+}
+
+.pbj_max progress::-webkit-progress-bar-value {
+    border-radius: 3px;
+}
+/*--compatible old chrome--*/
+.pbj progress::-webkit-progress-bar {
+    border-radius: 3px;
+}

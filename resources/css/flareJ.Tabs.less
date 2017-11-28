@@ -1,0 +1,127 @@
+/**********************************************************
+*-----------------------------------*
+* flareJ
+*-----------------------------------*
+* base on jQuery
+* Copyright 2015 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2015-10-16
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.Tabs
+*----------------------------------------------*/
+.tbj_areaTabPanels {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+
+    > .pj {
+        > .pj_body {
+            min-height: 200px;
+        }
+    }
+}
+
+.tbj_btnC1 {
+    vertical-align: 0.4ex;
+}
+
+.tbj_btnC2 {
+    vertical-align: 0.6ex;
+}
+
+.tbj_btnC3 {
+    vertical-align: 4px;
+}
+
+.tbj_areaTabBtnsBody {
+    height: 100%;
+    position: relative;
+    font-family: @fontFamily;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.tbj_areaTabBtnsBody.fj-mobile {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.tbj_tabBtn {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 13px;
+    padding-left: 12px;
+    padding-right: 12px;
+    -webkit-tap-highlight-color: transparent;
+    -moz-box-shadow: 0px 0px 3px #c1c1c1;
+    -webkit-box-shadow: 0px 0px 3px #c1c1c1;
+    box-shadow: 0px 0px 3px #c1c1c1;
+    .fj-border-box;
+
+    .tbj_btnArrow {
+        display: none;
+    }
+}
+
+.tbj_tabBtnNormal.tbj_tbg {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.tbj_tabBtnDown.tbj_tbg {
+    .tbj_btnArrow {
+        display: block;
+    }
+}
+
+.tbj-atb-border {
+    height: 1px;
+    _font-size: 0;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.tbj-area-tabbtns-bg {
+    border-style: solid;
+    border-width: 2px 1px 0 1px;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    *width: 99.7%;
+}
+/*.tbj_areaTabBtnsBody::-webkit-scrollbar{
+    height:0;
+}*/
+
+.tbj_areaTabPanels > .pj > .pj_body {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+    .tbj_tabBtn {
+        font-size: 14px;
+    }
+}

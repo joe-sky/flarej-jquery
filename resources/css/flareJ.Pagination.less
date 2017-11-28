@@ -1,0 +1,123 @@
+/**********************************************************
+*-----------------------------------*
+* flareJ
+*-----------------------------------*
+* base on jQuery
+* Copyright 2015 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2015-5-28
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.Pagination
+*----------------------------------------------*/
+.pnj {
+    position: relative;
+    clear: both;
+    height: 25px;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: @fontFamily;
+}
+
+.pnj-body {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right;
+
+    > div {
+        .fj-inline-block;
+        vertical-align: middle;
+    }
+}
+
+.pnj-body.fj-mobile {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.pnj_info {
+    height: 25px;
+    line-height: 25px;
+    margin: 0 3px;
+}
+
+.pnj_btn {
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e1e1e1;
+}
+
+.pnj_btn:hover {
+    background-color: #def2ff;
+}
+
+.pnj_txt {
+    height: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+}
+
+.pnj_txt_div {
+    .fj-inline-block;
+    height: 25px;
+    line-height: 25px;
+    *line-height: 20px;
+    margin: 0 3px;
+}
+
+.pnj_pages {
+    margin: 0 2px;
+    line-height: 25x;
+    white-space: nowrap;
+}
+
+.pnj_pages div {
+    .fj-inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+    text-align: center;
+}
+
+.pnj_pageSize {
+    width: 48px;
+    height: 23px;
+    border: 1px solid #e1e1e1;
+    _font-size: 9px;
+}
+
+.pnj-btn-go {
+    width: 45px;
+    margin: -2px 2px 0 2px;
+    font-size: 13px;
+    *padding-bottom: 0;
+    *margin-top: -8px;
+}
+
+.pnj_curPage {
+    width: 45px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    text-align: right;
+    .fj-inline-block;
+}
+
+.pnj-btn-refresh {
+    width: 26px;
+    height: 27px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    *position: relative;
+    *top: 5px;
+}

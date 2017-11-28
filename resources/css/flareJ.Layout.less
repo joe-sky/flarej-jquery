@@ -1,0 +1,206 @@
+/**********************************************************
+*-----------------------------------*
+* flareJ
+*-----------------------------------*
+* base on jQuery
+* Copyright 2015 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2015-4-23
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.Layout
+*----------------------------------------------*/
+.laj {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.laj_elem {
+    position: absolute;
+}
+
+.laj_centerAll {
+}
+
+.laj_bar {
+    background-color: #ebebeb;
+    font-size: 0;
+    z-index: 1;
+}
+
+.laj_barTogglerBtn {
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #cbcbcb;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.laj_barTogglerBtn:hover {
+    background-color: #d9d9d9;
+}
+
+.laj_north {
+    background-color: #e1e1e1;
+    z-index: 2;
+}
+
+.laj_north.laj-body-scroll {
+    position: fixed;
+    width: 100%;
+}
+
+.laj_northBar {
+    text-align: center;
+}
+
+.laj_northToggler {
+}
+
+.laj_northTogglerBtn {
+    width: 50px;
+    height: 8px;
+    top: 0;
+    display: inline-block;
+}
+
+.laj_west {
+    background-color: #e1e1e1;
+    z-index: 2;
+}
+
+.laj_west.laj-body-scroll {
+    position: fixed;
+}
+
+.laj_westBar {
+}
+
+.laj_westToggler {
+}
+
+.laj_westTogglerBtn {
+    width: 8px;
+    height: 50px;
+    left: 0;
+}
+
+.laj_center {
+    background-color: #e1e1e1;
+    margin: 0;
+    padding: 0;
+}
+
+.laj_center.laj-body-scroll {
+    position: relative;
+    z-index: 1;
+    left: 0;
+    width: auto;
+}
+
+.laj_eastBar {
+}
+
+.laj_eastToggler {
+}
+
+.laj_eastTogglerBtn {
+    width: 8px;
+    height: 50px;
+    left: 0;
+}
+
+.laj_east {
+    background-color: #e1e1e1;
+    z-index: 2;
+}
+
+.laj_southBar {
+    text-align: center;
+}
+
+.laj_southToggler {
+}
+
+.laj_southTogglerBtn {
+    width: 50px;
+    height: 8px;
+    top: 0;
+    display: inline-block;
+}
+
+.laj_south {
+    background-color: #e1e1e1;
+    z-index: 2;
+}
+
+/*arrow button*/
+.laj_arrow {
+    width: 0;
+    height: 0;
+    _filter: chroma(color=tomato);
+    _font-size: 0;
+}
+
+.laj_arrow_left {
+    margin: 20px 0 0 1px;
+    *margin: 20px 0 0 0px;
+    _margin: 20px 0 0 1px;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-right: 6px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: #aeaeae;
+    _border-top-color: tomato;
+    _border-bottom-color: tomato;
+}
+
+.laj_arrow_right {
+    margin: 20px 0 0 1px;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-left: 6px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #aeaeae;
+    _border-top-color: tomato;
+    _border-bottom-color: tomato;
+}
+
+.laj_arrow_top {
+    margin: 1px 0 0 20px;
+    *margin: 1px 0 0 0;
+    _margin: -1px 0 0 0;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 6px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #aeaeae;
+    _border-left-color: tomato;
+    _border-right-color: tomato;
+}
+
+.laj_arrow_bottom {
+    margin: 1px 0 0 20px;
+    *margin: 1px 0 0 0;
+    _margin: 0;
+    _position: relative;
+    _top: 1px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-top: 6px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #aeaeae;
+    _border-left-color: tomato;
+    _border-right-color: tomato;
+}

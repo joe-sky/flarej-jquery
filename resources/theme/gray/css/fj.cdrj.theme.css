@@ -1,0 +1,38 @@
+﻿/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2012 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@tom.com
+* last update:2012-7-31
+***********************************************************/
+
+/*----------------------------------------------*
+* fj.cdrj.theme.gray
+*----------------------------------------------*/
+.cdrj_bg{border:1px solid #AAAAAA;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.cdrj_filterBg{left:0px;top:0px;position:absolute;z-index:1;width: 100%;height: 100%;filter:alpha(opacity=100) progid:DXImageTransform.Microsoft.Gradient(GradientType=0, EndColorStr='#AAAAAA', StartColorStr='#ffffff');}
+.cdrj_svgBg{left:0px;top:0px;position:absolute;z-index:1;width: 100%;height: 100%;background-image:url(../../gray/svg/cdrj/cdrjBg.svg);}
+.cdrj_bg_wk{background-image:-webkit-gradient(linear, left top, left bottom , from(#ffffff), to(#AAAAAA));}
+.cdrj_bg_ff{background-image:-moz-linear-gradient(top, #ffffff, #AAAAAA);}
+.cdrj_watermark{color:#afacaf;position:absolute;left:0px;top:0px;width:100%;font-family: Arial;font-weight:bolder;font-size:56px;z-index:2;text-align:center;}
+.cdrj_header{color:#494848;height:70px;font-size:12px;font-family:"微软雅黑";margin:auto;}
+.cdrj_btnL{width:11px;height:21px;background-image:url(../../gray/svg/cdrj/cdrjBtnL.svg);}
+.cdrj_btnR{width:11px;height:21px;background-image:url(../../gray/svg/cdrj/cdrjBtnR.svg);}
+.cdrj_bodyBar{color:#505050;font-size:12px;font-family:"微软雅黑";height:20px;margin:auto;}
+.cdrj td.currentMonthE{font-weight:bold;color:#727272;}
+.cdrj_menuOver{background-color:#fdb721;color:#494848;font-size:12px;font-family:"微软雅黑";}
+.cdrj_headerOver{color:#A12B5F;cursor:default;font-size:12px;font-family:"微软雅黑";}
+.cdrj_Menu{/*filter:alpha(opacity=95);opacity:0.95;*/border-collapse:separate;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;color:#494848;border:1px solid #949494;background-color:#ffffff;cursor:default;width:100%;font-size:12px;}
+.cdrj_body{color:#000000;font-size:12px;font-family:"微软雅黑";cursor:pointer;margin:auto;}
+.cdrj_holiday{color:#A12B5F;}
+.cdrj_moreDay{color:#f9f9f9;}
+/*timePicker*/
+.cdrj_timeInput{width:78px;height:16px;border:1px solid #AAAAAA;margin-left:2px;font-family:宋体;}
+.cdrj_timeBtn{background-color:#c3c6c8;width:19px;height:9px;border:0;margin:0;float:left;cursor:pointer;}
+.cdrj_timeBtnHover{background-color:#dbddde;}
+.cdrj_timeBtnLeave{background-color:#c3c6c8;}

@@ -1,0 +1,24 @@
+﻿/**********************************************************
+*-----------------------------------*
+* flareJ JavaScript Library
+*-----------------------------------*
+* base on jQuery
+* Copyright 2010-2012 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@tom.com
+* last update:2012-8-6
+***********************************************************/
+
+/*----------------------------------------------*
+* fj.pbj.theme.gray
+*----------------------------------------------*/
+.pbj {border-color:#aaaaaa;}
+.pbj_progress {border:1px solid #aaaaaa;}
+.pbj_progressDiv{background-color:#ccd1d5;}
+.pbj_percent{color:#292929;}
+.pbj progress::-moz-progress-bar{background-color:#ccd1d5;}
+.pbj progress::-webkit-progress-value{background-color:#ccd1d5;}
+.pbj progress::-webkit-progress-bar{background-color:#fff;}
+.pbj progress::-webkit-progress-bar-value{background-color:#ccd1d5;}

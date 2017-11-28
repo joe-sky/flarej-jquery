@@ -1,0 +1,51 @@
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 fj.all.pure.css > fj.all.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Component.css > flareJ.Component.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Accordion.css > flareJ.Accordion.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.AutoComplete.css > flareJ.AutoComplete.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Calendar.css > flareJ.Calendar.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Carousel.css > flareJ.Carousel.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Datagrid.css > flareJ.Datagrid.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.FileUpload.css > flareJ.FileUpload.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Layout.css > flareJ.Layout.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.LoadMask.css > flareJ.LoadMask.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Marquee.css > flareJ.Marquee.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Menu.css > flareJ.Menu.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.MessageBox.css > flareJ.MessageBox.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Pagination.css > flareJ.Pagination.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Panel.css > flareJ.Panel.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.ProgressBar.css > flareJ.ProgressBar.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.ScrollButton.css > flareJ.ScrollButton.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.SelectBox.css > flareJ.SelectBox.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Slider.css > flareJ.Slider.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Tabs.css > flareJ.Tabs.min.cssTree
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Tree.css > flareJ.Tree.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.GridLayout.css > flareJ.GridLayout.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Button.css > flareJ.Button.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 flareJ.Base.css > flareJ.Base.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 normalize.css > normalize.min.css
+
+java -jar yuicompressor-2.4.8.jar -v --charset utf-8 Eric_Meyer_Reset_CSS.css > Eric_Meyer_Reset_CSS.min.css

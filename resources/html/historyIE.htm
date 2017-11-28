@@ -1,0 +1,16 @@
+﻿<!doctype html>
+<html>
+<body>
+    <script type="text/javascript">
+        var qs = function (item) {  //获取url参数
+            var v = location.search.match(new RegExp("[\?\&]" + item + "=([^\&]*)(\&?)", "i"));
+            return v ? v[1] : v;
+        };
+
+        var s = qs("sign");
+        if (s != null) {
+            parent.fj.BHJ.historyChange(s);
+        }
+    </script>
+</body>
+</html>

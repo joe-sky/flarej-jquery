@@ -1,0 +1,291 @@
+/**********************************************************
+*-----------------------------------*
+* flareJ
+*-----------------------------------*
+* base on jQuery
+* Copyright 2015 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2015-4-12
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.Accordion
+*----------------------------------------------*/
+.adj {
+    border-color: #D8D8D8;
+    border-width: 1px;
+}
+
+.adj_headBtn, .adj_footBtn {
+    width: 100%;
+    height: 30px;
+    border-style: solid;
+    border-color: #D8D8D8;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.adj_headBtn {
+    line-height: 33px;
+    border-bottom-width: 1px;
+}
+
+.adj_footBtn {
+    line-height: 27px;
+    margin-top: -1px;
+    border-top-width: 1px;
+}
+
+.adj_btnNoHover {
+    background-color: #F2F2F2;
+}
+
+.adj_btnHover {
+    background-color: #ebebeb;
+}
+
+.adj_headBtnArrow, .adj_footBtnArrow {
+    font-size: 14px;
+}
+
+.adj_headBtnArrow.fj-has-animate {
+    /*background-image: url(../image/Accordion/page-tri.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 13px;
+    height: 10px;
+    margin: 0 auto;
+    _font-size: 0;*/
+    -moz-animation: slideMoveT infinite 1.6s linear;
+    -webkit-animation: slideMoveT infinite 1.6s linear;
+    animation: slideMoveT infinite 1.6s linear;
+}
+
+@-moz-keyframes slideMoveT {
+    0% {
+        opacity: 0.2;
+        -moz-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+
+    70%,98% {
+        opacity: 1;
+        -moz-transform: translate(0,-4px);
+        transform: translate(0,-4px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+@-webkit-keyframes slideMoveT {
+    0% {
+        opacity: 0.2;
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+
+    70%,98% {
+        opacity: 1;
+        -webkit-transform: translate(0,-4px);
+        transform: translate(0,-4px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+@keyframes slideMoveT {
+    0% {
+        opacity: 0.2;
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+
+    70%,98% {
+        opacity: 1;
+        -moz-transform: translate(0,-4px);
+        -ms-transform: translate(0,-4px);
+        -webkit-transform: translate(0,-4px);
+        transform: translate(0,-4px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+.adj_footBtnArrow.fj-has-animate {
+    /*background-image: url(../image/Accordion/page-tri.png);
+    background-repeat: no-repeat;
+    background-position: 0 -11px;
+    width: 13px;
+    height: 10px;
+    margin: 0 auto;
+    _font-size: 0;*/
+    -moz-animation: slideMoveB infinite 1.6s linear;
+    -webkit-animation: slideMoveB infinite 1.6s linear;
+    animation: slideMoveB infinite 1.6s linear;
+}
+
+@-moz-keyframes slideMoveB {
+    0% {
+        opacity: 0.2;
+        -moz-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+
+    70%,98% {
+        opacity: 1;
+        -moz-transform: translate(0,4px);
+        transform: translate(0,4px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+@-webkit-keyframes slideMoveB {
+    0% {
+        opacity: 0.2;
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+
+    70%,98% {
+        opacity: 1;
+        -webkit-transform: translate(0,4px);
+        transform: translate(0,4px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+@keyframes slideMoveB {
+    0% {
+        opacity: 0.2;
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+
+    70%,98% {
+        opacity: 1;
+        -moz-transform: translate(0,4px);
+        -ms-transform: translate(0,4px);
+        -webkit-transform: translate(0,4px);
+        transform: translate(0,4px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+.adj_item {
+    width: 100%;
+    background-color: #EBEBEB;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    margin-top: -1px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    font-family: @fontFamily;
+}
+
+.adj_selectedItem {
+    background-color: #FAFAFA;
+}
+
+.adj_contentArea {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.adj_emptyTxt {
+    font-size: 13px;
+    padding: 15px;
+}
+
+.adj-auto-complete {
+    width: 100%;
+    /**width: 99%;*/
+    height: 29px;
+    border-bottom: 1px solid #D8D8D8;
+    background-color: #f1f1f1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.adj-search-icon {
+    text-align: right;
+}
+
+.adj-search-icon i {
+    margin-top: 7px;
+    display: inline-block;
+}
+
+.adj-search-input {
+    text-align: center;
+}
+
+.adj-search-input input {
+    width: 95%;
+    *width: 92%;
+    margin-top: 2px;
+    *margin-top: 1px;
+}
+
+.adj-search-list {
+    height: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .adj_item {
+        font-size: 14px;
+    }
+
+    .adj_emptyTxt {
+        font-size: 14px;
+    }
+
+    .adj_headBtnArrow, .adj_footBtnArrow {
+        font-size: 18px;
+    }
+}

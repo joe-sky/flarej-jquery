@@ -1,0 +1,115 @@
+/**********************************************************
+*-----------------------------------*
+* flareJ
+*-----------------------------------*
+* base on jQuery
+* Copyright 2015 Joe_Sky
+* Licensed under the MIT license
+*-----*-----*-----*-----*-----*-----*
+* author:Joe_Sky
+* mail:hitomi_doax@sina.com
+* last update:2015-3-31
+***********************************************************/
+
+/*----------------------------------------------*
+* flareJ.Component
+*----------------------------------------------*/
+
+/*--------------------------------------------*
+* div vertical center
+*---------------------------------------------*
+* from inner to outer, set cj_divCvFd1,cj_divCvFd2,cj_divCvFd3 3 classes
+*--------------------------------------------*/
+.cj_divCvFd1 {
+    display: table;
+    overflow: hidden;
+    *position: relative;
+}
+
+.cj_divCvFd2 {
+    vertical-align: middle;
+    display: table-cell;
+    *position: absolute;
+    *top: 50%;
+}
+
+.cj_divCvFd3 {
+    *position: relative;
+    *top: -50%;
+    left: -50%;
+}
+
+/*--------------------*
+* button style
+*--------------------*/
+.pj_btn, .pj_btn2, .pj_btn3 {
+    height: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    filter: alpha(opacity=100);
+    font-size: 12px;
+    outline: none;
+}
+
+.pj_btn {
+    width: 55px;
+}
+
+.pj_btn2 {
+    width: 67px;
+}
+
+.pj_btn3 {
+    width: 58px;
+    height: 21px;
+}
+
+.pj_btn:hover, .pj_btn2:hover, .pj_btn3:hover, .pj_btn_hover {
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+/*--------------------*
+* vml
+*--------------------*/
+.cj_vml {
+    behavior: url(#default#VML);
+    display: inline-block;
+}
+
+/*--------------------*
+ * file custom style
+*--------------------*/
+.fuj_customStyle_wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.fuj_customStyle_text {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    color: #777;
+}
+
+.fuj_customStyle_file {
+    position: absolute;
+    right: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.fuj_customStyle_btn {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
